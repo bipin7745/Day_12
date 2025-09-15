@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Objects Constructors</title>
+  </head>
+  <body>
+<body>
+<h2>Object Constructors</h2>
+
+    <p id="output"></p>
+    <script>
+function Person1(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+const myFather1= new Person1("John", "Doe", 50, "blue");
+const myMother1 = new Person1("Sally", "Rally", 48, "green");
+
+
+      document.getElementById("output").innerHTML =
+      "My father1 is age    " + myFather1.age+"<br>"+
+      "My Mother is age    " + myMother1.age;
+    </script>
+  </body>
+</html>

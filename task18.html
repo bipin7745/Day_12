@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Object Method</title>
+  </head>
+  <body>
+    <h1>Adding a Methods</h1>
+    
+    <p id="output"></p>
+    <script>
+        const person={
+            firstName:"Tany",
+            lastName:"Task",
+            id:5436,
+            
+        };
+        person.name=function(){
+                return this.firstName +" "+this.lastName;
+        };
+        document.getElementById("output").innerHTML="My Iron Man Name  "+person.name() ;
+    </script>
+  </body>
+</html>

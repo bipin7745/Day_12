@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function this</title>
+  </head>
+  <body>
+    <h1>In Html into value for global function, is the window object.</h1>
+    <p id="output"></p>
+    <script>
+      let x = myFunction();
+      function myFunction() {
+        return this;
+      }
+      const myObject = {
+        firstName: "Bipin",
+        lasName: "Kanjariya",
+        fullname: function () {
+          return this.firstName + " " + this.lasName;
+        },
+      };
+
+      document.getElementById("output").innerHTML =
+        x + "<br>" + myObject.fullname();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+  </head>
+  <body>
+    <h1>The Object.assign() Method</h1>
+    <p id="output"></p>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 19,
+        eyeColor: "blue"
+      };
+      const person1={firstName:"Anne",lastName:"Smith"};
+
+      Object.assign(person,person1);
+      let text = Object.entries(person);
+      document.getElementById("output").innerHTML =text;
+    </script>
+  </body>
+</html>

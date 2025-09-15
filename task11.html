@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+<body>
+    <h2>The Object.create() Method</h2>
+<p>Create a new object from the prototype of another project.</p>
+<p id="output"></p>
+<script>
+    const person={
+        firstName:"john",
+        lastName:"Doe",
+         language: "EN"
+    };
+    
+    const man =Object.create(person);
+    man.firstName="Peter"
+    document.getElementById("output").innerHTML=person.firstName+" and "+man.firstName;
+</script>
+</body>
+</html>

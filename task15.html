@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScipt Object Properties</title>
+</head>
+<body>
+    <h1>Deleting a Property</h1>
+    <p id="output"></p>
+    <script>
+        const person={
+            firstName:"john",
+            lastName:"Doe",
+            age:50,
+            eyeColor:"blue"
+        };
+        delete person.age;
+        document.getElementById("output").innerHTML=person.firstName+ " is "+person.age+" years Old";
+    </script>
+</body>
+</html>

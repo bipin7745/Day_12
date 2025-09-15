@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function Apply  Method</title>
+  </head>
+  <body>
+    <h1>In this example the fulllName method of person is applied on person1:
+    </h1>
+    <p id="output"></p>
+    <script>
+      const person = {
+        fullName: function (city,country) {
+          return this.firstName + " " + this.lastName+","+city+","+country;
+        },
+      };
+      const person1 = {
+        firstName: "John",
+        lastName: "Doe",
+      };
+      const person2 = {
+        firstName: "Mary",
+        lastName: "Doe",
+      };
+      document.getElementById("output").innerHTML =person.fullName.apply(person2, ["Oslo", "Norway"]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creates an Object</title>
+</head>
+<body>
+   
+    <h1>
+        This example creates an object with 3 properties fullName property is a method
+    </h1>
+     <p id="output"></p>
+    <script>
+        const person={
+            firstName:"Bipin",
+            lastName:"Kanjariya",
+            fullName:function()
+            {
+                return this.firstName+" "+this.lastName;
+            }
+        }
+        document.getElementById("output").innerHTML=person.fullName();
+    </script>
+</body>
+</html>
